@@ -64,7 +64,7 @@ nav {
         position: absolute;
         padding: 0px 20px;
         background: #fff;
-        border: 2px solid #222;
+        box-shadow: 0px 10px 40px rgba(0,0,0,0.5);
         border-radius: 5px;
         h2{
             font-size: $font-lg;
@@ -113,7 +113,7 @@ nav {
         position: relative;
         height: 240px;
         width: 250px;
-        border: 2px solid #222;
+        box-shadow: 0px 10px 40px rgba(0,0,0,0.5);
         border-radius: 4px;
         padding: 15px;
         margin: 0px 15px;
@@ -149,17 +149,23 @@ nav {
                 }
                 .more-detail{
                     background: map-get($map: $colors, $key: 'warning');
+                    &:hover{
+                        background: #09aecf; 
+                    }
                 }
                 .need{
                     background: map-get($map: $colors, $key: 'success');
                     color: #fff;
+                    &:hover{
+                        background: #22bd75;
+                        color: #222;
+                    }
                 }
             }
         
         &:hover{
             transform: scale(1.1);
             background: map-get($map: $colors, $key: 'danger');
-            border: 2px solid map-get($map: $colors, $key: 'danger');
             .bgname{
                 color: #fff;
             }
@@ -167,8 +173,8 @@ nav {
                 color: #fff;
             }
             .more-detail{
-                background: map-get($map: $colors, $key: 'success');
-                color: #fff;
+                background: map-get($map: $colors, $key: 'info');
+                color: #222;
             }
         }   
     }
