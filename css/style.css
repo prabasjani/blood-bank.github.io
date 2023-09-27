@@ -1,0 +1,378 @@
+.bg-primary {
+  background: #0d6efd;
+}
+
+.text-primary {
+  color: #0d6efd;
+}
+
+.bg-success {
+  background: #198754;
+}
+
+.text-success {
+  color: #198754;
+}
+
+.bg-danger {
+  background: #dc3545;
+}
+
+.text-danger {
+  color: #dc3545;
+}
+
+.bg-warning {
+  background: #ffc107;
+}
+
+.text-warning {
+  color: #ffc107;
+}
+
+.bg-info {
+  background: #0dcaf0;
+}
+
+.text-info {
+  color: #0dcaf0;
+}
+
+.bg-dark {
+  background: #212529;
+}
+
+.text-dark {
+  color: #212529;
+}
+
+.bg-text {
+  background: #fff;
+}
+
+.text-text {
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  position: fixed;
+  padding: 20px;
+  background: #212529;
+  height: 30px;
+  width: 98%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav h2 {
+  font-size: 30px;
+  color: #fff;
+}
+nav a {
+  text-decoration: none;
+  padding: 8px 20px;
+  font-size: 20px;
+  color: #fff;
+  transition: 0.3 all ease-in-out;
+}
+nav a.home {
+  color: #dc3545;
+}
+nav a:hover {
+  color: #dc3545;
+}
+
+.home-container {
+  position: relative;
+  top: 65px;
+  padding: 0px 20px;
+}
+.home-container h2 {
+  font-size: 30px;
+}
+.home-container p {
+  font-size: 20px;
+  text-indent: 30px;
+  line-height: 30px;
+}
+.home-container.active {
+  display: none;
+}
+
+.bg-primary {
+  background: #0d6efd;
+}
+
+.text-primary {
+  color: #0d6efd;
+}
+
+.bg-success {
+  background: #198754;
+}
+
+.text-success {
+  color: #198754;
+}
+
+.bg-danger {
+  background: #dc3545;
+}
+
+.text-danger {
+  color: #dc3545;
+}
+
+.bg-warning {
+  background: #ffc107;
+}
+
+.text-warning {
+  color: #ffc107;
+}
+
+.bg-info {
+  background: #0dcaf0;
+}
+
+.text-info {
+  color: #0dcaf0;
+}
+
+.bg-dark {
+  background: #212529;
+}
+
+.text-dark {
+  color: #212529;
+}
+
+.bg-text {
+  background: #fff;
+}
+
+.text-text {
+  color: #fff;
+}
+
+.btn {
+  padding: 12px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+.btn:hover {
+  background: #408cfd;
+  transform: scale(1.15);
+}
+.btn:last-child:hover {
+  background: #21b26f;
+}
+
+.eligibility-container {
+  display: none;
+  position: relative;
+  top: 100px;
+  left: 275px;
+  width: 60%;
+}
+.eligibility-container .eligibility {
+  position: absolute;
+  padding: 0px 20px;
+  background: #fff;
+  border: 2px solid #222;
+  border-radius: 5px;
+}
+.eligibility-container .eligibility h2 {
+  font-size: 30px;
+}
+.eligibility-container .eligibility h3 {
+  font-size: 30px;
+}
+.eligibility-container .eligibility p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.eligibility-container .eligibility ul {
+  font-size: 20px;
+}
+.eligibility-container .eligibility ul li {
+  line-height: 30px;
+}
+.eligibility-container .eligibility .continue {
+  position: relative;
+  bottom: -10px;
+  left: 325px;
+}
+.eligibility-container.active {
+  display: block;
+}
+
+.bg-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+}
+.bg-container .top-row {
+  display: flex;
+  position: relative;
+  top: 85px;
+}
+.bg-container .bottom-row {
+  display: flex;
+  position: relative;
+  top: 100px;
+}
+.bg-container .blood-group {
+  position: relative;
+  height: 240px;
+  width: 250px;
+  border: 2px solid #222;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 0px 15px;
+  transition: 0.3s all ease-in-out;
+  text-decoration: none;
+}
+.bg-container .blood-group .bgpic {
+  width: 250px;
+}
+.bg-container .blood-group .bgname {
+  font-size: 20px;
+  font-weight: 600;
+  color: #dc3545;
+  margin: 10px 0px 0px 0px;
+}
+.bg-container .blood-group .bgdesc {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0d6efd;
+  margin: 10px 0px 0px 0px;
+}
+.bg-container .blood-group .bg-btns {
+  display: flex;
+  justify-content: space-between;
+}
+.bg-container .blood-group .bg-btns .btn-bg {
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  width: 120px;
+  padding: 10px;
+  margin: 10px 0px 0px 0px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.bg-container .blood-group .bg-btns .more-detail {
+  background: #ffc107;
+}
+.bg-container .blood-group .bg-btns .need {
+  background: #198754;
+  color: #fff;
+}
+.bg-container .blood-group:hover {
+  transform: scale(1.1);
+  background: #dc3545;
+  border: 2px solid #dc3545;
+}
+.bg-container .blood-group:hover .bgname {
+  color: #fff;
+}
+.bg-container .blood-group:hover .bgdesc {
+  color: #fff;
+}
+.bg-container .blood-group:hover .more-detail {
+  background: #198754;
+  color: #fff;
+}
+.bg-container.active {
+  display: none;
+}
+
+.need-container {
+  display: none;
+  position: relative;
+  top: 80px;
+  padding: 0px 20px;
+}
+.need-container .need-blood {
+  position: relative;
+  left: 450px;
+  height: 500px;
+  width: 400px;
+  border: 2px solid #0d6efd;
+  border-radius: 8px;
+  padding: 20px;
+}
+.need-container .need-blood .form-title {
+  font-size: 30px;
+  text-align: center;
+  margin: 10px 0px;
+}
+.need-container .need-blood .emergency-form {
+  position: absolute;
+  left: 12.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.need-container .need-blood .emergency-form input {
+  margin: 15px 0px 0px 0px;
+  width: 300px;
+  height: 20px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.need-container .need-blood .emergency-form input:focus {
+  border: 2px solid #dc3545;
+}
+.need-container .need-blood .emergency-form select {
+  margin: 15px 0px 0px 0px;
+  width: 320px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.need-container .need-blood .emergency-form select:focus {
+  border: 2px solid #dc3545;
+}
+.need-container .need-blood .emergency-form .btn {
+  margin: 20px 0px 0px 0px;
+  width: 150px;
+}
+.need-container .need-blood .emergency-form .submit-note {
+  display: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #198754;
+}
+.need-container .need-blood .emergency-form .bx {
+  margin: 0px 10px;
+}
+.need-container.active {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

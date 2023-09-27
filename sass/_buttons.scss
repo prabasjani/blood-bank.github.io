@@ -1,0 +1,19 @@
+@import 'colors';
+
+.btn{
+    padding: 12px 20px;
+    color: map-get($colors,'text');
+    border: none;
+    border-radius: 4px;
+    font-size: $font-sm;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    &:hover{
+        background: #408cfd;
+        transform: scale(1.15);
+    }
+    &:last-child:hover{
+        background: #21b26f;
+    }
+}

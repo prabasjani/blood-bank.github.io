@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood  Groups</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navbar">
+        <h2>Praba Blood Bank</h2>
+        <div class="links">
+            <a href="/src/index.html">Home</a>
+            <a href="#" class="home">Blood Groups</a>
+            <a href="/src/register.html">Register</a>
+            <a href="/src/contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <div class="bg-container">
+        <div class="top-row">
+            <div class="blood-group">
+                <img class="bgpic" src="/images/O+.png">
+                <p class="bgname">O Positive</p>
+                <p class="bgdesc">O positive is the most common Blood group</p>
+                <div class="bg-btns">
+                    <button class="btn-bg more-detail">More details</button>
+                    <button class="btn-bg need op">Need</button>
+                </div>
+            </div>
+    
+            <div class="blood-group">
+                <img class="bgpic" src="/images/O-.png">
+                <p class="bgname">O Negative</p>
+                <p class="bgdesc">O Negative donars are often called 'Universal Donars'</p>
+                <div class="bg-btns">
+                    <button class="btn-bg more-detail">More details</button>
+                    <button class="btn-bg need on">Need</button>
+                </div>
+            </div>
+    
+            <div class="blood-group">
+                <img class="bgpic" src="/images/A+.png">
+                <p class="bgname">A Positive</p>
+                <p class="bgdesc">A positive is the Second most common Blood group</p>
+                <div class="bg-btns">
+                    <button class="btn-bg more-detail">More details</button>
+                    <button class="btn-bg need ap">Need</button>
+                </div>
+            </div>
+    
+            <div class="blood-group">
+                <img class="bgpic" src="/images/A-.png">
+                <p class="bgname">A Negative</p>
+                <p class="bgdesc">A Negative is the Universal Platelet group</p>
+                <div class="bg-btns">
+                    <button class="btn-bg more-detail">More details</button>
+                    <button class="btn-bg need an">Need</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bottom-row">
+            <div class="blood-group">
+                <img class="bgpic" src="/images/B+.png">
+                <p class="bgname">B Positive</p>
+                <p class="bgdesc">Only 8% of donars are B Positive but there is always need for it</p>
+                <div class="bg-btns">
+                    <button class="btn-bg more-detail">More details</button>
+                    <button class="btn-bg need bp">Need</button>
+                </div>
+            </div>
+
+            <div class="blood-group">
+                <img class="bgpic" src="/images/B-.png">
+                <p class="bgname">B Negative</p>
+                <p class="bgdesc">Just 2% of donars are B Negative,so Rarest Blood group</p>
+                <div class="bg-btns">
+                    <button class="btn-bg more-detail">More details</button>
+                    <button class="btn-bg need bn">Need</button>
+                </div>
+            </div>
+
+            <div class="blood-group">
+                <img class="bgpic" src="/images/AB+.png">
+                <p class="bgname">AB Positive</p>
+                <p class="bgdesc">Around 2% of donars have AB positive blood</p>
+                <div class="bg-btns">
+                    <button class="btn-bg more-detail">More details</button>
+                    <button class="btn-bg need abp">Need</button>
+                </div>
+            </div>
+
+            <div class="blood-group">
+                <img class="bgpic" src="/images/AB-.png">
+                <p class="bgname">AB Negative</p>
+                <p class="bgdesc">AB Negative is the Rarest of the 8 main Blood groups</p>
+                <div class="bg-btns">
+                    <button class="btn-bg more-detail">More details</button>
+                    <button class="btn-bg need abn">Need</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Emergency needs -->
+
+    <div class="need-container">
+        <div class="need-blood">
+            <h2 class="text-danger form-title">Emergency Blood <span class="bgt">O+</span></h2>
+            <form class="emergency-form">
+                <input type="text" id="app-name" placeholder="Applicant Name">
+                <input type="number" id="mobile" placeholder="Mobile Number">
+                <input type="text" id="pat-name" placeholder="Patient Name">
+                <input type="text" id="age" placeholder="Patient's Age">
+                <select id="select">
+                    <option value="">Select the Purpose</option>
+                    <option value="Accident">Accident</option>
+                    <option value="Pregnant">Pregnant</option>
+                    <option value="Medical Issue">Medical Issue</option>
+                    <option value="Sucide Attempt">Sucide Attempt</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input type="text" id="add" placeholder="Address" required>
+                <button type="submit" class="btn bg-success" id="submit">Submit</button>
+                <p class="submit-note"><i class='bx bx-check-circle'></i>We'll Contact You Within 10 mins</p>
+            </form>
+        </div>
+    </div>    
+    
+    <script src="/js/need.js"></script>
+</body>
+</html>

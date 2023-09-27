@@ -1,0 +1,254 @@
+@import 'colors';
+@import 'variables';
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    position: fixed;
+    padding: 20px;
+    background: map-get($colors,'dark');
+    height: 30px;
+    width: 98%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2{
+        font-size: $font-lg;
+        color: map-get($map: $colors, $key: 'text');
+    }
+    a{
+        text-decoration: none;
+        padding: 8px 20px;
+        font-size: $font-sm;
+        color: map-get($map: $colors, $key: 'text');
+        transition: 0.3 all ease-in-out;
+        &.home{
+            color: map-get($map: $colors, $key: 'danger');
+        }
+        &:hover{
+            color: map-get($map: $colors, $key: 'danger');
+        }
+    }
+}
+.home-container{
+    position: relative;
+    top: 65px;
+    padding: 0px 20px;
+    h2{
+        font-size: $font-lg;
+    }
+    p{
+        font-size: $font-sm;
+        text-indent: 30px;
+        line-height: 30px
+    }
+    &.active{
+        display: none;
+    }
+}
+@import 'buttons';
+
+.eligibility-container{
+    display: none;
+    position: relative;
+    top: 100px;
+    left: 275px;
+    width: 60%;
+    .eligibility{
+        position: absolute;
+        padding: 0px 20px;
+        background: #fff;
+        border: 2px solid #222;
+        border-radius: 5px;
+        h2{
+            font-size: $font-lg;
+        }
+        h3{
+            font-size: $font-lg;
+        }
+        p{
+            font-size: $font-sm;
+            line-height: 30px
+        }
+        ul{
+            font-size: $font-sm;
+            li{
+                line-height: 30px;
+            }
+        }
+        .continue{
+            position: relative;
+            bottom: -10px;
+            left: 325px;
+        }
+    }
+    &.active{
+        display: block;
+    }
+}
+
+//blood group page
+.bg-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+    .top-row{
+        display: flex;
+        position: relative;
+        top: 85px;
+    }
+    .bottom-row{
+        display: flex;
+        position: relative;
+        top: 100px;
+    }
+    .blood-group{
+        position: relative;
+        height: 240px;
+        width: 250px;
+        border: 2px solid #222;
+        border-radius: 4px;
+        padding: 15px;
+        margin: 0px 15px;
+        transition: 0.3s all ease-in-out;
+        text-decoration: none;
+            .bgpic{
+                width: 250px;
+            }
+            .bgname{
+                font-size: $font-sm;
+                font-weight: 600;
+                color: map-get($map: $colors, $key: 'danger');
+                margin: 10px 0px 0px 0px;
+            }
+            .bgdesc{
+                font-size: $font-md;
+                font-weight: 500;
+                color: map-get($map: $colors, $key: 'primary');
+                margin: 10px 0px 0px 0px;
+            }
+            .bg-btns{
+                display: flex;
+                justify-content: space-between;
+                .btn-bg{
+                    font-size: $font-md;
+                    border: none;
+                    border-radius: 4px;
+                    width: 120px;
+                    padding: 10px;
+                    margin: 10px 0px 0px 0px;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                }
+                .more-detail{
+                    background: map-get($map: $colors, $key: 'warning');
+                }
+                .need{
+                    background: map-get($map: $colors, $key: 'success');
+                    color: #fff;
+                }
+            }
+        
+        &:hover{
+            transform: scale(1.1);
+            background: map-get($map: $colors, $key: 'danger');
+            border: 2px solid map-get($map: $colors, $key: 'danger');
+            .bgname{
+                color: #fff;
+            }
+            .bgdesc{
+                color: #fff;
+            }
+            .more-detail{
+                background: map-get($map: $colors, $key: 'success');
+                color: #fff;
+            }
+        }   
+    }
+    &.active{
+        display: none;
+    }
+}
+
+//need form
+.need-container{
+    display: none;
+    position: relative;
+    top: 80px;
+    padding: 0px 20px;
+    .need-blood{
+        position: relative;
+        left: 450px;
+        height: 500px;
+        width: 400px;
+        border: 2px solid map-get($map: $colors, $key: 'primary');
+        border-radius: 8px;
+        padding: 20px;
+        .form-title{
+            font-size: $font-lg;
+            text-align: center;
+            margin: 10px 0px;
+        }
+        .emergency-form{
+            position: absolute;
+            left: 12.5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            input{
+                margin: 15px 0px 0px 0px;
+                width: 300px;
+                height: 20px;
+                padding: 10px;
+                font-size: $font-md;
+                outline: none;
+                border: none;
+                border-radius: 4px;
+                box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.4);
+                &:focus{
+                    border: 2px solid map-get($map: $colors, $key: 'danger');
+                }
+            }
+            select{
+                margin: 15px 0px 0px 0px;
+                width: 320px;
+                height: 40px;
+                padding: 10px;
+                font-size: $font-md;
+                outline: none;
+                border: none;
+                border-radius: 4px;
+                box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.4);
+                &:focus{
+                    border: 2px solid map-get($map: $colors, $key: 'danger');
+                }
+            }
+            .btn{
+                margin: 20px 0px 0px 0px;
+                width: 150px;
+            }
+            .submit-note{
+                display: none;
+                font-size: $font-md;
+                font-weight: 500;
+                color: map-get($map: $colors, $key: 'success');
+            }
+            .bx{
+                margin: 0px 10px;
+            }
+        }
+    }
+    &.active{
+        display: none;
+    }
+}
+
+
